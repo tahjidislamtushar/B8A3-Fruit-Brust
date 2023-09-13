@@ -1,13 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-    
+
+    <!-- Tailwind and Daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Custom Classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'fruit-primary': '#F85559',
+                        'fruit-primary-bg': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
+
+<body class="font-lato">
+    <header class="md:container md:mx-auto">
+        <!-- Navbar Section Start -->
+        <!-- <section class="grid lg:grid-cols-3 navbar my-14 bg-fruit-primary-bg rounded-full"> -->
+        <div class="grid lg:grid-cols-3 navbar my-14 px-8 py-4 bg-fruit-primary-bg rounded-full">
+            <div class="menu-center hidden lg:flex">
+                <ul class="menu text-base menu-horizontal px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="justify-center">
+                <img src="images/logo.png" alt="">
+                <a class="btn text-white btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
+            </div>
+            <div class="justify-end">
+                <div class="relative">
+                    <input type="text" placeholder="Search here" class="input rounded-full input-bordered w-24 md:w-auto" />
+                </div>
+                <button class="absolute btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex-1">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm text-left dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        </section>
+
+        <!-- Navbar Section End -->
+
+        <!-- Slider or Carousel Section Start-->
+        <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                            <br> with Smile
+                        </h2>
+                        <p>Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images//slider/bike1.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                            <br> with Smile
+                        </h2>
+                        <p>Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images//slider/bike2.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slider 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                            <br> with Smile
+                        </h2>
+                        <p>Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images//slider/bike3.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- Slider 4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
+                            <br> with Smile
+                        </h2>
+                        <p>Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <button class="btn bg-bike-primary text-white">Purchase</button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="/images//slider/bike4.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- Slider or Carousel Section End-->
 
     </header>
     <main>
@@ -17,4 +186,5 @@
 
     </footer>
 </body>
+
 </html>
