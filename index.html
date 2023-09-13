@@ -41,8 +41,8 @@
 <body class="font-lato">
     <header class="md:container md:mx-auto">
         <!-- Navbar Section Start -->
-        <!-- <section class="grid lg:grid-cols-3 navbar my-14 bg-fruit-primary-bg rounded-full"> -->
-        <div class="grid lg:grid-cols-3 navbar my-14 px-8 py-4 bg-fruit-primary-bg rounded-full">
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 navbar my-14 px-8 py-4 lg:bg-fruit-primary-bg rounded-full">
             <div class="menu-center hidden lg:flex">
                 <ul class="menu text-base menu-horizontal px-1 text-white">
                     <li><a>Home</a></li>
@@ -53,11 +53,11 @@
             </div>
             <div class="justify-center">
                 <img src="images/logo.png" alt="">
-                <a class="btn text-white btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
+                <a class="btn lg:text-white btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
             </div>
-            <div class="justify-end">
+            <div class="justify-end ">
                 <div class="relative">
-                    <input type="text" placeholder="Search here" class="input rounded-full input-bordered w-24 md:w-auto" />
+                    <input type="text" placeholder="Search here" class="input rounded-full input-bordered lg:w-auto" />
                 </div>
                 <button class="absolute btn btn-ghost btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -66,8 +66,6 @@
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-            </div>
-            <div class="flex-1">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -77,7 +75,7 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm text-left dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-32">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -85,10 +83,7 @@
                     </ul>
                 </div>
             </div>
-            
-            
         </div>
-
         </section>
 
         <!-- Navbar Section End -->
@@ -96,18 +91,15 @@
         <!-- Slider or Carousel Section Start-->
         <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
             <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full">
-                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
-                    <div class="space-y-7 flex-1">
-                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
-                            <br> with Smile
-                        </h2>
-                        <p>Amet minim mollit non deserunt ullamco
-                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <button class="btn bg-bike-primary text-white">Purchase</button>
-                    </div>
-                    <div class="flex-1">
-                        <img src="/images//slider/bike1.png" class="w-[400px]" />
+            <div id="slide1" class="carousel-item bg-no-repeat bg-cover relative h-full w-full"
+                style="background-image: url(images/banner1.png);">
+                <div class="hero-overlay bg-opacity-40  px-40 ">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg my-20">
+                            <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-7">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary border-none">Shop Now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -116,18 +108,15 @@
                 </div>
             </div>
             <!-- Slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full">
-                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
-                    <div class="space-y-7 flex-1">
-                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
-                            <br> with Smile
-                        </h2>
-                        <p>Amet minim mollit non deserunt ullamco
-                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <button class="btn bg-bike-primary text-white">Purchase</button>
-                    </div>
-                    <div class="flex-1">
-                        <img src="/images//slider/bike2.png" class="w-[400px]" />
+            <div id="slide2" class="carousel-item bg-no-repeat bg-cover relative h-full w-full"
+                style="background-image: url(images/banner2.png);">
+                <div class="hero-overlay bg-opacity-40  px-40 ">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg my-20">
+                            <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-7">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary border-none">Shop Now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -136,18 +125,15 @@
                 </div>
             </div>
             <!-- Slider 3 -->
-            <div id="slide3" class="carousel-item relative w-full">
-                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
-                    <div class="space-y-7 flex-1">
-                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
-                            <br> with Smile
-                        </h2>
-                        <p>Amet minim mollit non deserunt ullamco
-                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <button class="btn bg-bike-primary text-white">Purchase</button>
-                    </div>
-                    <div class="flex-1">
-                        <img src="/images//slider/bike3.png" class="w-[400px]" />
+            <div id="slide3" class="carousel-item bg-no-repeat bg-cover relative h-full w-full"
+                style="background-image: url(images/banner3.png);">
+                <div class="hero-overlay bg-opacity-40  px-40 ">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg my-20">
+                            <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-7">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary border-none">Shop Now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -156,18 +142,15 @@
                 </div>
             </div>
             <!-- Slider 4 -->
-            <div id="slide4" class="carousel-item relative w-full">
-                <div class="flex flex-col lg:flex-row p-4 gap-20 lg:p-24">
-                    <div class="space-y-7 flex-1">
-                        <h2 class="text-2xl lg:text-6xl font-bold">Ride-on R15 V4
-                            <br> with Smile
-                        </h2>
-                        <p>Amet minim mollit non deserunt ullamco
-                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                        <button class="btn bg-bike-primary text-white">Purchase</button>
-                    </div>
-                    <div class="flex-1">
-                        <img src="/images//slider/bike4.png" class="w-[400px]" />
+            <div id="slide4" class="carousel-item bg-no-repeat bg-cover relative h-full w-full"
+                style="background-image: url(images/banner4.png);">
+                <div class="hero-overlay bg-opacity-40  px-40 ">
+                    <div class="hero-content text-center text-neutral-content">
+                        <div class="max-w-lg my-20">
+                            <h1 class="mb-5 text-2xl lg:text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-7">We supply highly quality organic products</p>
+                            <button class="btn bg-fruit-primary border-none">Shop Now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -175,7 +158,6 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
             </div>
-        </div>
         <!-- Slider or Carousel Section End-->
 
     </header>
